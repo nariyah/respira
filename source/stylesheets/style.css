@@ -560,7 +560,7 @@
 		{
 			position: relative;
 			display: inline-block;
-			background: #df7366;
+			background: #68BDE2;
 			color: #fff;
 			text-align: center;
 			border-radius: 0.5em;
@@ -583,7 +583,7 @@
 			.button:hover
 			{
 				color: #fff;
-				background: #ef8376;
+				background: #60B0D3;
 			}
 			
 			input[type="button"].alt,
@@ -700,9 +700,32 @@
 
 		.no-sidebar #header
 		{
-			background-image: url('../images/header_small.jpg');
 			min-height: 10em;
 		}
+			.no-sidebar.que-es #header
+			{
+				background-image: url('../images/que_es-header.jpg');
+			}
+
+			.no-sidebar.porque #header
+			{
+				background-image: url('../images/porque-header.jpg');
+			}
+
+			.no-sidebar.como #header
+			{
+				background-image: url('../images/como-header.jpg');
+			}
+
+			.no-sidebar.como-trabajamos #header
+			{
+				background-image: url('../images/como-header.jpg');
+			}
+
+			.no-sidebar.tarifas #header
+			{
+				background-image: url('../images/tarifas-header.jpg');
+			}
 
 		.homepage #header
 		{
@@ -803,6 +826,18 @@
 			}
 
 /*********************************************************************************/
+/* Tables                                                                      */
+/*********************************************************************************/
+
+td {
+	padding-bottom: 0.5em;
+}
+
+tr td:first-child {
+  width: 40%;
+}
+
+/*********************************************************************************/
 /* Nav                                                                           */
 /*********************************************************************************/
 
@@ -891,6 +926,12 @@
 				{
 					display: none;
 				}
+
+	.no-sidebar #nav > ul > li > a,
+	.no-sidebar #nav > ul > li > span
+	{
+		color: black;
+	}
 
 	.dropotron
 	{
